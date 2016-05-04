@@ -1,0 +1,147 @@
+/* id selector for banner with dimensions, position, and align */
+
+#banner {
+  padding: 0px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+/* class selector for vertical space */
+
+p.space {
+  margin-bottom: 75%;
+}
+
+
+/* table style */
+
+table,
+td,
+th {
+  text-align: center;
+}
+
+
+/* table style */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+/* img class for gallery */
+
+img.gallery {
+  background: rgba(54, 25, 25, .00);
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  padding: 35px;
+  opacity: .7;
+}
+
+#zionImageContainer img {
+  background: rgba(54, 25, 25, .00);
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 2%;
+}
+
+#slotImageContainer img {
+  background: rgba(54, 25, 25, .00);
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 2%;
+}
+
+#bigImageContainer img {
+  background: rgba(54, 25, 25, .00);
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 2%;
+}
+
+#craterImageContainer img {
+  background: rgba(54, 25, 25, .00);
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  /*   height: 25%; */
+  padding: 2%;
+}
+
+#antelopeImageContainer img {
+  background: rgba(54, 25, 25, .00);
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 2%;
+}
+
+
+/* image class for the header */
+
+img.header {
+  width: 100%;
+  height: auto;
+}
+
+
+/* main style */
+
+main {
+  margin-top: 5px;
+  width: 40%;
+  margin: 0 auto;
+  background-color: ;
+  padding: 5px;
+  text-align: center;
+  font-style: ;
+  border: ;
+}
+
+/* article style with margin*/
+
+article {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-size: 125%;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+/* footer style with float */
+
+footer {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  float: left;
+}
