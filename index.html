@@ -1,0 +1,150 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+  <style type="text/css">
+    #h1{
+    padding:12px;
+    }
+  </style>
+
+  <img id="banner" img src="http://i1055.photobucket.com/albums/s511/Josh_Tilton/web_header%20copy_zpsuhfl6uaf.jpg" border="0" alt=" photo header_logo_zpsccyuez9l.jpg" class="header" /></a>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <article>
+    <h1>ZION</h1>
+  </article>
+  <br/>
+  <br/>
+  <div id="zionImageContainer"></div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <article>
+    <h1>SLOT CANYON</h1>
+  </article>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <div id="slotImageContainer"></div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <article>
+    <h1>BIG COTTONWOOD CANYON</h1>
+  </article>
+  <br/>
+  <br/><br/>
+  <br/>
+  <div id="bigImageContainer"></div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <article>
+    <h1>CRATER LAKE</h1>
+  </article>
+  <br/>
+  <br/><br/>
+  <br/>
+  <div id="craterImageContainer"></div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <article>
+    <h1>ANTELOPE ISLAND</h1>
+  </article>
+  <br/>
+  <br/><br/>
+  <br/>
+  <div id="antelopeImageContainer"></div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+  <main>
+    <p>Contact information: <a href="mailto:joshtilton@hotmail.com">
+  JoshTilton@hotmail.com</a>.</p>
+  </main>
+
+  <script>
+    //Initialize array imgs with custom images
+var zionImgs = ['http://i1055.photobucket.com/albums/s511/Josh_Tilton/ZION/IMG_2111_zps00sh2bxf.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/ZION/IMG_2027_zpsgcuau5jh.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/ZION/IMG_2012_zpsia2zyyqg.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/ZION/IMG_2009_zpsh84bv7zu.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/ZION/IMG_1998_zpsurdqfqhb.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/ZION/IMG_1996_zpsd4tvsdix.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/ZION/IMG_2116_zpskg0kglvu.jpg'];
+//Create container to store image
+var container = document.getElementById('zionImageContainer');
+//Adds child element to avoid root node
+var docFrag = document.createDocumentFragment();
+//Running for each loop to append images through docfrag
+zionImgs.forEach(function(cur, index, arr) {
+  var img = document.createElement('img');
+  img.src = cur;
+  docFrag.appendChild(img);
+});
+container.appendChild(docFrag);
+//Initialize array imgs with custom images
+var slotImgs = ['http://i1055.photobucket.com/albums/s511/Josh_Tilton/Slot%20Canyons/IMG_2201%20copy_zpsjqygybuf.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Slot%20Canyons/IMG_2191_zpswkjsciib.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Slot%20Canyons/IMG_2190_zps28bbqz5x.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Slot%20Canyons/IMG_2183_zpsbkchfgfp.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Slot%20Canyons/IMG_2182_zps2p7e4km7.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Slot%20Canyons/IMG_2148_zpsmhlm4zq2.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Slot%20Canyons/IMG_2140_zpsqllnro9n.jpg'];
+//Create container to store image
+var container = document.getElementById('slotImageContainer');
+//Adds child element to avoid root node
+var docFrag = document.createDocumentFragment();
+//Running for each loop to append images through docfrag
+slotImgs.forEach(function(cur, index, arr) {
+  var img = document.createElement('img');
+  img.src = cur;
+  docFrag.appendChild(img);
+});
+container.appendChild(docFrag);
+var bigImgs = ['http://i1055.photobucket.com/albums/s511/Josh_Tilton/Big%20CottonWood/living_room_zpslcrrxdl2.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Big%20CottonWood/IMG_1325_zpsof7cwtbv.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Big%20CottonWood/IMG_1316_zpsk9y6qwto.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Big%20CottonWood/IMG_1350_zpsdezqwmd5.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Big%20CottonWood/IMG_1618_zpsw2c9zsk0.jpg'];
+//Create container to store image
+var container = document.getElementById('bigImageContainer');
+//Adds child element to avoid root node
+var docFrag = document.createDocumentFragment();
+//Running for each loop to append images through docfrag
+bigImgs.forEach(function(cur, index, arr) {
+  var img = document.createElement('img');
+  img.src = cur;
+  docFrag.appendChild(img);
+});
+container.appendChild(docFrag);
+var craterImgs = ['http://i1055.photobucket.com/albums/s511/Josh_Tilton/Crater%20Lake/IMG_1889_zpsdmszd97e.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Crater%20Lake/Open_road_zps3ecnjddi.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Crater%20Lake/IMG_1943_zpslvaamauu.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Crater%20Lake/IMG_1893_zpslqp9qedl.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Crater%20Lake/IMG_1896_zpsmzw7esgy.jpg'];
+//Create container to store image
+var container = document.getElementById('craterImageContainer');
+//Adds child element to avoid root node
+var docFrag = document.createDocumentFragment();
+//Running for each loop to append images through docfrag
+craterImgs.forEach(function(cur, index, arr) {
+  var img = document.createElement('img');
+  img.src = cur;
+  docFrag.appendChild(img);
+});
+container.appendChild(docFrag);
+var antelopeImgs = ['http://i1055.photobucket.com/albums/s511/Josh_Tilton/Antelope%20Island/IMG_1842_zpsmeln2urh.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Antelope%20Island/IMG_1853_zps4shycdyc.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Antelope%20Island/IMG_1874_zpshhy2kclf.jpg', 'http://i1055.photobucket.com/albums/s511/Josh_Tilton/Antelope%20Island/IMG_1829_zpsnitoluau.jpg'];
+//Create container to store image
+var container = document.getElementById('antelopeImageContainer');
+//Adds child element to avoid root node
+var docFrag = document.createDocumentFragment();
+//Running for each loop to append images through docfrag
+antelopeImgs.forEach(function(cur, index, arr) {
+  var img = document.createElement('img');
+  img.src = cur;
+  docFrag.appendChild(img);
+});
+container.appendChild(docFrag);
+  </script>
+
+</body>
+</html>
